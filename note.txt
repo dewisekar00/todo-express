@@ -22,3 +22,13 @@
 
 command : npx sequelize-cli model:generate --name todo --attributes taskName:string,description:string,Date:date,completed:boolean
 
+5.menampilkan semua todo
+-buat controllers allTodo
+-masukin ke routes
+-kirim ke app.js
+
+error:
+const db = require('../models');
+const { todo } = db;
+
+
