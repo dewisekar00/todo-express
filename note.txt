@@ -1,0 +1,24 @@
+1.buat folder = 
+-controllers
+-middleware
+-routes
+
+2.buat file=
+-app.js: root utama
+-.env : digunakan untuk menyimpan informasi rahasia, seperti kunci API, credential database, konfigurasi server
+
+3.dowload package yang dibutuhkan =
+-dowload express
+-sequelize , sequelize-cli
+-mysql 2 
+-env
+
+4.menggunakan sequelize =
+-npx sequelize-cli init 
+-ubah isi config dgn nama seperti di nama database
+-terus cek apa sudah terhubung ke database : npx sequelize db:migrate:status
+
+4.generate model / table
+
+command : npx sequelize-cli model:generate --name todo --attributes taskName:string,description:string,Date:date,completed:boolean
+
