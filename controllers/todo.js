@@ -85,4 +85,18 @@ module.exports = {
       });
     }
   },
+
+  detailTodoById: async (req, res) => {
+    try {
+      // detail berdasarkan id params
+      const detailDataTodo = await todo.findOne({
+        where: {
+          id: req.params.id,
+        },
+      });
+      res.status(200).json(detailDataTodo);
+    } catch (err) {
+      res.status(500).json({ message: 'cannot get todo' });
+    }
+  },
 };
