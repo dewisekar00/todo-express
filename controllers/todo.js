@@ -45,7 +45,6 @@ module.exports = {
     }
   },
 
-
   deleteTodoById: async (req, res) => {
     try {
       const deleteTodo = await todo.destroy({
@@ -61,6 +60,29 @@ module.exports = {
         message: err.message || 'Internal Server Error',
       });
     }
-    
+  },
+
+  updateTodoByid: async (req, res) => {
+    try {
+      const { taskName, description, completed } = req.body;
+      const updateDataTodo = {
+        taskName: taskName,
+        description: description,
+        completed: completed,
+      };
+
+      const updateTodo = await todo.update(updateDataTodo, {
+        where: {
+          id: req.params.id,
+        },
+      });
+      res.status(200).json({
+        message: 'Success Update Todo',
+      });
+    } catch (err) {
+      res.status(500).json({
+        message: err.message || 'Internal Server Error',
+      });
+    }
   },
 };
