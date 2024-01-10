@@ -14,8 +14,7 @@ app.use(todoRoute);
 
 
 
-const port = process.env.ROOT || 4040; // Menggunakan nilai dari ROOT jika ada, jika tidak, menggunakan default 4040
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+app.listen(process.env.ROOT , () => {
+    console.log(`Server running on port 4040`);
 });

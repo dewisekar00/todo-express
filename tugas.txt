@@ -1,0 +1,21 @@
+- Web Service dan RESTful API untuk sebuah ToDoList Application.
+
+- harus bisa digunakan untuk CRUD standar sebuah ToDoList
+
+- database MySQL, maka gunakan sequelize-cli untuk membuat model, migration, dan seeder, dan gunakan sequelize untuk mengakses database
+
+- Minimal ada endpoint untuk: 
+1.Membuat user baru (Register) Login 
+2.Membuat todo baru 
+3.Melihat semua todo 
+4.Melihat detail todo 
+5.Mengubah todo 
+6.Menghapus todo 
+7.Menghapus semua todo
+
+
+
+- menerapkan authentication dan authorization.
+- menerapkan response code yang sesuai
+- Buatlah sebuah file readme.md yang berisi dokumentasi dari web service dan RESTful API yang dibuat
+- Deploy web service dan RESTful API

@@ -22,13 +22,33 @@
 
 command : npx sequelize-cli model:generate --name todo --attributes taskName:string,description:string,Date:date,completed:boolean
 
-5.menampilkan semua todo
+5.add seeder : npx sequelize-cli seed:generate --name namaSeeder
+
+> menampilkan semua todo
 -buat controllers allTodo
 -masukin ke routes
 -kirim ke app.js
 
-error:
+error: cant connect database bcs of this
 const db = require('../models');
 const { todo } = db;
+
+> add todo : 
+- Menangkap data dari request body
+- Membuat objek baru untuk todo
+- Menambahkan data ke dalam database menggunakan Sequelize
+
+> delete todo by Id: 
+-pake destroy untuk hapus data
+-where: menerima id dari req params
+
+
+
+
+
+
+
+
+
 
 
