@@ -19,3 +19,8 @@
 - menerapkan response code yang sesuai
 - Buatlah sebuah file readme.md yang berisi dokumentasi dari web service dan RESTful API yang dibuat
 - Deploy web service dan RESTful API
+
+
+progress:
+tambah data user 
+dan auth authorization user

@@ -19,10 +19,10 @@
 -terus cek apa sudah terhubung ke database : npx sequelize db:migrate:status
 
 4.generate model / table
-
 command : npx sequelize-cli model:generate --name todo --attributes taskName:string,description:string,Date:date,completed:boolean
 
-5.add seeder : npx sequelize-cli seed:generate --name namaSeeder
+5.add seeder : 
+command: npx sequelize-cli seed:generate --name namaSeeder
 
 > menampilkan semua todo
 -buat controllers allTodo
@@ -42,6 +42,18 @@ const { todo } = db;
 -pake destroy untuk hapus data
 -where: menerima id dari req params
 
+urutan membuat table/model baru
+
+-create models
+command: npx sequelize-cli model:generate --name todo --attributes taskName:string,description:string,Date:date,completed:boolean
+
+-mengirim table/models baru ke database mysql
+command: npx sequelize db:migrate 
+
+-create seeder 
+command: npx sequelize-cli seed:generate --name namaSeeder
+
+npx sequelize-cli seed:generate --name users
 
 
 
