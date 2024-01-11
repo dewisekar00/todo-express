@@ -57,6 +57,7 @@ npx sequelize-cli seed:generate --name users
 
 
 
+npm install bcrypt
 
 
 

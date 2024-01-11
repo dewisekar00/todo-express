@@ -12,6 +12,9 @@ const todoRoute = require('./routes/todo');
 
 app.use(todoRoute);
 
+const userRouter = require('./routes/user')
+app.use(userRouter)
+
 
 
 
