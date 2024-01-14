@@ -20,12 +20,13 @@ module.exports = {
     try {
       // 1. Menangkap data dari request body
       const { taskName, description, completed } = req.body;
-
+      const userId = req.user.id;
       // 2. Membuat objek baru untuk todo
       const newTodo = {
         taskName: taskName,
         description: description,
         completed: completed ? completed : false,
+        userId: userId,
       };
 
       // 3. Menambahkan data ke dalam database menggunakan Sequelize

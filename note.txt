@@ -57,11 +57,19 @@ npx sequelize-cli seed:generate --name users
 
 
 
-npm install bcrypt
+npm install bcrypt = to add salt in password
+install jsonwebtoken  = to create token
 
 
 
 
 
 
+next action: 
 
+// pengguna hanya bisa menambahkan todo sebanyak 10 dalam sehari 
+// jadi dibatasi akses add todonya
+/*
+berati aku kelompokan todo dengan emailnya atau id usernya ,
+jadi setiap todo yang ditambahkan itu ada user id siapa yang buat
+*/

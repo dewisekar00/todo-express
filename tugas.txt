@@ -21,6 +21,21 @@
 - Deploy web service dan RESTful API
 
 
-progress:
-tambah data user 
-dan auth authorization user
+middleware ditempatkan di =
+1.sebelum user create todo baru 
+untuk memastikan user punya token yang valid sebelum ngebuat todo baru. Ini penting biar enggak sembarang orang bisa ngebuat todo. 
+
+2.update ToDo
+apakah yang mau ngubah todo itu emang pemilik todo atau enggak?
+
+3.Delete todo
+Middleware bisa ditempatin di sini juga, cek dulu apakah yang request menghapus todo itu adalah pemiliknya atau bukan
+
+
+> Authentication (Auth):
+memastikan bahwa yang melakukan request itu emang udah login dan punya token yang valid (JWT). 
+
+> Authorization (Authorization):
+Memberikan ijin untuk melakukan operasi tertentu setelah identitas terverifikasi (contoh: middleware untuk CRUD operasi pada todo).
+
+
