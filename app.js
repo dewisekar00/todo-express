@@ -3,14 +3,12 @@ const app = express();
 
 require('dotenv').config();
 
+const allRoute = require('./routes')
 app.use(express.json());
+app.use(allRoute)
 
-const todoRoute = require('./routes/todo');
 
-app.use(todoRoute);
 
-const userRouter = require('./routes/user');
-app.use(userRouter);
 
 app.listen(process.env.ROOT, () => {
   console.log(`Server running on port 4040`);
