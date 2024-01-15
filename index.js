@@ -10,8 +10,6 @@ app.use(allRoute)
 
 
 
-const port = parseInt(process.env.ROOT, 10) || 4040;
-
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+app.listen(process.env.ROOT, () => {
+  console.log(`Server running on port 4040`);
 });
